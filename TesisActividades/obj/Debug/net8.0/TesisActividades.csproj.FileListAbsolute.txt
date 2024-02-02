@@ -1,0 +1,14 @@
+C:\Users\arman\source\repos\TesisActividades\TesisActividades\obj\Debug\net8.0\TesisActividades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arman\source\repos\TesisActividades\TesisActividades\obj\Debug\net8.0\TesisActividades.AssemblyInfoInputs.cache
+C:\Users\arman\source\repos\TesisActividades\TesisActividades\obj\Debug\net8.0\TesisActividades.AssemblyInfo.cs
+C:\Users\arman\source\repos\TesisActividades\TesisActividades\obj\Debug\net8.0\TesisActividades.csproj.CoreCompileInputs.cache
+C:\Users\arman\source\repos\TesisActividades\TesisActividades\bin\Debug\net8.0\TesisActividades.exe
+C:\Users\arman\source\repos\TesisActividades\TesisActividades\bin\Debug\net8.0\TesisActividades.deps.json
+C:\Users\arman\source\repos\TesisActividades\TesisActividades\bin\Debug\net8.0\TesisActividades.runtimeconfig.json
+C:\Users\arman\source\repos\TesisActividades\TesisActividades\bin\Debug\net8.0\TesisActividades.dll
+C:\Users\arman\source\repos\TesisActividades\TesisActividades\bin\Debug\net8.0\TesisActividades.pdb
+C:\Users\arman\source\repos\TesisActividades\TesisActividades\obj\Debug\net8.0\TesisActividades.dll
+C:\Users\arman\source\repos\TesisActividades\TesisActividades\obj\Debug\net8.0\refint\TesisActividades.dll
+C:\Users\arman\source\repos\TesisActividades\TesisActividades\obj\Debug\net8.0\TesisActividades.pdb
+C:\Users\arman\source\repos\TesisActividades\TesisActividades\obj\Debug\net8.0\TesisActividades.genruntimeconfig.cache
+C:\Users\arman\source\repos\TesisActividades\TesisActividades\obj\Debug\net8.0\ref\TesisActividades.dll
