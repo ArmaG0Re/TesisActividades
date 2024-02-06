@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TesisActividades")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d2c6fc48f235c3fe472325f659bca5440d46e0e")]
 [assembly: System.Reflection.AssemblyProductAttribute("TesisActividades")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TesisActividades")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

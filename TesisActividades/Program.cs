@@ -1,56 +1,38 @@
-﻿// See https://aka.ms/new-console-template for more information
-Desarrollador desarrollador = new Desarrollador();
-desarrollador.Nombre = "Armando Gonzalez";
-desarrollador.Categoria = CategoriaNivel.Nivel1;
+﻿using TesisActividades.Clases;
+using static TesisActividades.assets.Variables;
 
-public class Desarrollador
+namespace TesisActividades // El namespace depende del nombre que le diste al proyecto al iniciarlo.
 {
-    public string Nombre { get; set; }
-    public DateTime FechaIngreso { get; set; }
-    public string Email { get; set; }
-    public CategoriaNivel Categoria { get; set; }
-    public List<Proyecto> Proyectos { get; set; }
-
-    // Métodos para asignar proyecto.
-    public void AsignarProyecto(Proyecto proyecto)
+    public class Program
     {
-        Proyectos.Add(proyecto);
-    }
-}
-
-public class Proyecto
-{
-    public string Nombre { get; set; }
-    public CategoriaNivel Categoria { get; set; }
-    public int DuracionHoras { get; set; }
-    public DateTime FechaInicio { get; set; }
-    public Desarrollador Desarrollador { get; set; }
-    public Dictionary<DateTime, int> HorasTrabajadasPorDia { get; set; }
-
-    // Método para registrar horas trabajadas.
-    public void RegistrarHoras(DateTime fecha, int horas)
-    {
-        if (HorasTrabajadasPorDia.ContainsKey(fecha))
+        public static void Main(string[] args)
         {
-            HorasTrabajadasPorDia[fecha] += horas;
+            ObtenerDesarrollador();
         }
-        else
+
+        private static void ObtenerDesarrollador()
         {
-            HorasTrabajadasPorDia.Add(fecha, horas);
+           Desarrollador desarrollador1 = new Desarrollador();
+            desarrollador1.Nombre = "Armando González Reta";
+            desarrollador1.FechaIngreso = DateTime.Now;
+            desarrollador1.Email = "prueba@hotmail.com";
+            desarrollador1.Categoria = CategoriaNivel.Nivel1;
+            desarrollador1.Proyectos = new List<Proyecto>() 
+            { 
+                ObtenerProyecto()
+            };
+            Console.WriteLine($"Nombre: {desarrollador1.Nombre}, Email: {desarrollador1.Email}, Proyectyo: {desarrollador1.Proyectos[0].Nombre}");
         }
-    }
 
-    // Método para calcular las horas restantes en el proyecto.
-    public int HorasRestantes()
-    {
-        int totalHorasTrabajadas = HorasTrabajadasPorDia.Values.Sum();
-        return DuracionHoras - totalHorasTrabajadas;
-    }
-}
+        private static Proyecto ObtenerProyecto()
+        {
+            Proyecto proyecyo1 = new Proyecto();
+            proyecyo1.Nombre = "UMBRELLA";
+            proyecyo1.Categoria = CategoriaNivel.Nivel3;
+            proyecyo1.DuracionHoras = 80;
+            proyecyo1.FechaInicio = DateTime.Now;
+            return proyecyo1;
+        }
 
-public enum CategoriaNivel 
-{
-    Nivel1 = 1,
-    Nivel2 = 2,
-    Nivel3 = 3
+    }
 }
