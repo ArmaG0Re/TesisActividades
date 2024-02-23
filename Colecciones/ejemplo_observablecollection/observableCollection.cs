@@ -18,14 +18,19 @@ namespace Colecciones.ejemplo_observablecollection
             empleados.Add(new Empleado { Nombre = "Luis", Edad = 30 });
             empleados.Add(new Empleado { Nombre = "Angel", Edad = 30 });
             empleados.CollectionChanged += Empleados_CollectionChanged;
+
             Console.WriteLine($"Ejemplo con observableCollection");
             Console.WriteLine($"-------------------");
             ObtenerEmpleado(in empleados);
             Console.WriteLine("Agregamos un nuevo empleado");
             empleados.Add(new Empleado { Nombre = "Julian", Edad = 50 });
+            Console.WriteLine($"");
+
             Console.WriteLine("Removeremos un nuevo empleado");
             empleados.RemoveAt(0);
             ObtenerEmpleado(in empleados);
+            Console.WriteLine($"");
+
         }
 
         private void Empleados_CollectionChanged(object? sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)

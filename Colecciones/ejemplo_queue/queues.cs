@@ -10,6 +10,7 @@ namespace Colecciones.ejemplo_queue
     {
         public queues()
         {
+            //Coleccion que representa el primero que entra el primero que sale
             Queue<int> cola = new Queue<int> { };
             cola.Enqueue(1);
             cola.Enqueue(2);
@@ -19,17 +20,21 @@ namespace Colecciones.ejemplo_queue
             Console.WriteLine($"Ejemplo con queue");
             Console.WriteLine($"-------------------");
             ObtenerElementoCola(cola);
+            Console.WriteLine($"");
 
             Console.WriteLine("Agregamos el elemento 10 a la coleccón");
             cola.Enqueue(10);
             ObtenerElementoCola(cola);
+            Console.WriteLine($"");
 
             Console.WriteLine("Eliminamos un elemento de la colección");
             cola.Dequeue();
             ObtenerElementoCola(cola);
+            Console.WriteLine($"");
 
-           
-            
+            Console.WriteLine("Mostramos el elemento más viejo de la queque");
+            Console.WriteLine(cola.Peek());
+
         }
         public void ObtenerElementoCola(Queue<int> cola) 
         {
